@@ -11,7 +11,7 @@ module.exports = () => doNotRefresh(html`
       ${Select({ name: 'loading', caption: 'Loading', options: [ false, true ] })}
     </div>
     ${Select({ name: 'color', caption: 'Color', options: [ null, 'blue', 'green', 'red', 'yellow', 'black', 'white' ] })}
-    ${Select({ name: 'labelColor', caption: 'Label Color / Hover Label Color', options: [ null, 'blue', 'green', 'red', 'yellow', 'black', 'white' ] })}
+    ${Select({ name: 'textColor', caption: 'Text Color / Text Color Hover', options: [ null, 'blue', 'green', 'red', 'yellow', 'black', 'white' ] })}
     <div class="row">
       ${Select({ name: 'px', caption: 'Horizontal Padding', options: [ 0, .25, .5, .75, 1, 2, 3, 4 ] })}
       ${Select({ name: 'py', caption: 'Vertical Padding', options: [ 0, .25, .5, .75, 1, 2, 3, 4 ] })}

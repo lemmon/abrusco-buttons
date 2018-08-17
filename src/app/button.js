@@ -9,7 +9,7 @@ module.exports = (props) => html`
       ${props.color && `bg-${props.color}` || ``}
       ${props.style
         ? props.color && `color-${props.color}` || ``
-        : props.labelColor && `color-${props.labelColor}` || ``
+        : props.textColor && `color-${props.textColor}` || ``
       }
       ${
         props.px && props.py && props.px == props.py
@@ -30,7 +30,7 @@ module.exports = (props) => html`
   ><span
     class="
       button-caption
-      ${props.style && props.labelColor && `color-${props.labelColor}` || ``}
+      ${props.style && props.textColor && `color-${props.textColor}` || ``}
     ">${props.caption}</span></button>
 `
 

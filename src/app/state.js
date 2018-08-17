@@ -2,7 +2,7 @@ module.exports = {
   props: {
     caption: 'My Super Fancy Button',
     color: 'blue',
-    labelColor: 'white',
+    textColor: 'white',
     style: undefined,
     disabled: false,
     loading: false,
