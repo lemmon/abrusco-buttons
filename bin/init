@@ -1,0 +1,8 @@
+#!/bin/sh
+cd "$(dirname $0)/.."
+BASE_DIR=`pwd`
+
+rm -rf develop/*
+
+mkdir -pv develop
+ln -snv ../src/index.html develop/index.html

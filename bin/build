@@ -1,0 +1,13 @@
+#!/bin/sh
+cd "$(dirname $0)/.."
+BASE_DIR=`pwd`
+
+rm -rf dist/*
+
+mkdir -pv dist
+cp -v src/index.html dist/index.html
+
+browserify src/app -o dist/app.js
+
+abrusco src/css -o dist/app.css --minify
+abrusco src/css/buttons.css -o dist/abrusco.buttons.css
